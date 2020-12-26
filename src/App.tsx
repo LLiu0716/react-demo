@@ -39,7 +39,7 @@ class App extends Component {
   addList ( lsit: Mobj ) {
     lsit.id = Date.now()
     this.setState( {
-      list: [ ...this.state.list, lsit ]
+      list: [ lsit, ...this.state.list ]
     } )
   }
 
