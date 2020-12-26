@@ -50,7 +50,7 @@ class From extends Component<OneProps> {
     return (
       <form>
         <label htmlFor="name">Name</label>
-        <input type="text" name="name" id="name" value={ this.state.name } onChange={ this.addList } />
+        <input type="text" name="name" id="name" placeholder='Name' value={ this.state.name } onChange={ this.addList } />
         <label htmlFor="age">Age</label>
         <input type="number" name="age" id="age" value={ this.state.age } onChange={ this.addList } />
         <input type="button" value='Submit' onClick={ this.submitForm } />
